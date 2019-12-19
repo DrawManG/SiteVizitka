@@ -2,14 +2,15 @@
 <html>
 <head>
 
-
+    <!-- подключаем всё нужное-->
     <link rel="shortcut icon" href="icon/1.ico" type="image/x-icon">
 	  <meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- подключение стилей CSS -->
 	  <style>
 .parallax {
   /* The image used */
-  background-image: url("SourceImage/2.jpg");
+  background-image: url("SourceImage/swipe.jpg");
   
 
   /* Set a specific height */
@@ -246,15 +247,15 @@ border-radius: 15px
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
     }
 #back-top {
-    width: 5.5%;
+    width: 5.3%;
     height:100%;
     position:fixed;
     top:0;
     left:0;
     display:none;
     text-align:center;
-    font-size: 90%
-    font:bold 'robot', sans-serif;
+    font-size: 65%
+    font:bold 'Calibri' ;
     text-decoration:none;
     color:#88db9e;
     padding-top:10px;
@@ -328,10 +329,12 @@ a.button27:active {
     box-shadow: 0 0 0 1px #bbb inset, 0 1px 3px rgba(0,0,0,.5) inset, 0 1px 2px #fff;
 }
 </style>
+<!-- название сайта -->
 	<title>КУРСЫ МОСТДОРГЕОТРЕСТ</title>
 	
 </head>
 <body style="background-color: #339966;">
+  <!-- скрипт на кнопку "назад" сбоку -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script type="text/javascript">
 function up() {  
@@ -349,14 +352,15 @@ jQuery(function(f){
     });
 });
 </script>
-<a id="back-top" href="#start_site" style="width: 5.5%; border-radius: 15px;" onclick="return up()">&#9650; Наверх</a>
+<!-- сама кнопка -->
+<a id="back-top" href="#start_site" style="border-radius: 15px; font-size: 60%" onclick="return up()">&#9650; Наверх</a>
 
 
 <div class="loading-wrap">
 
    <p><a name="start_site"></a></p> 
 	<p  style="text-align: center;padding-bottom: 0px;padding-top: 0px; margin-top: 0px;padding-bottom: 0px">
-		<img src="SourceImage/1.jpg" style="width: 10%;height: 50%; border-radius: 250px">
+		<img src="SourceImage/logo.jpg" style="width: 10%;height: 50%; border-radius: 250px">
 
 	<h1 style="text-align: center; padding-bottom: 0px;background-color:  #9fdfbf;border-radius: 30px;"><p class="text_effect">Курсы повышения квалификации!</p></h1>
 
@@ -382,6 +386,9 @@ jQuery(function(f){
         </div>
         <div class="slider__item">
           <img class="img-fluid" src="SourceImage/2.jpg" alt="c2">
+        </div>
+        <div class="slider__item">
+          <img class="img-fluid" src="SourceImage/3.jpg" alt="c3">
         </div>
       </div>
     </div>
