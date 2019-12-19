@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 5//EN" "http://www.w3.org/TR/html5/strict.dtd">
 <html>
 <head>
 
@@ -245,7 +245,23 @@ border-radius: 15px
     .slider__control_next::before {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
     }
-
+#back-top {
+    width: 5.5%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    display:none;
+    text-align:center;
+    font-size: 90%
+    font:bold 'robot', sans-serif;
+    text-decoration:none;
+    color:#88db9e;
+    padding-top:10px;
+    }
+#back-top:hover {
+    background: rgba(225,231,237, 0.8);
+}
     /* стили для индикаторов */
     .slider__indicators {
       position: absolute;
@@ -313,13 +329,32 @@ a.button27:active {
 }
 </style>
 	<title>КУРСЫ МОСТДОРГЕОТРЕСТ</title>
-	ы
+	
 </head>
 <body style="background-color: #339966;">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript">
+function up() {  
+  var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);  
+if(top > 0) {  
+  window.scrollBy(0,((top+100)/-10));  
+  t = setTimeout('up()',20);  
+} else clearTimeout(t);  
+return false;  
+}
+jQuery(function(f){
+    var element = f('#back-top');
+    f(window).scroll(function(){
+        element['fade'+ (f(this).scrollTop() > 200 ? 'In': 'Out')](250);           
+    });
+});
+</script>
+<a id="back-top" href="#start_site" style="width: 5.5%; border-radius: 15px;" onclick="return up()">&#9650; Наверх</a>
+
 
 <div class="loading-wrap">
 
-
+   <p><a name="start_site"></a></p> 
 	<p  style="text-align: center;padding-bottom: 0px;padding-top: 0px; margin-top: 0px;padding-bottom: 0px">
 		<img src="SourceImage/1.jpg" style="width: 10%;height: 50%; border-radius: 250px">
 
@@ -330,9 +365,9 @@ a.button27:active {
 </div>
 <div style="padding: 20px;margin: 2px;background-color:#72CF8B;border-radius: 20px; text-align: center;">
   <p>
-    <a href="#" class="button27" style="width: 30%; border-radius: 30px;font-size: 100%;font-style: bold;height: 50%">О компании</a>
-    <a href="#" class="button27" style="width: 30%;border-radius: 30px;font-size: 100%;font-style: bold;height: 50%">Таблица о курсах</a>
-    <a href="#" class="button27" style="width: 30%;border-radius: 30px;font-size: 100%;font-style: bold;height: 50%">Как добраться</a>
+    <a href="#company" class="button27" style="width: 30%; border-radius: 30px;font-size: 100%;font-style: bold;height: 50%">О компании</a>
+    <a href="#tab_info" class="button27" style="width: 30%;border-radius: 30px;font-size: 100%;font-style: bold;height: 50%">Таблица о курсах</a>
+    <a href="#how_adress" class="button27" style="width: 30%;border-radius: 30px;font-size: 100%;font-style: bold;height: 50%">Как добраться</a>
   </p>
 </div>
 
@@ -552,7 +587,8 @@ a.button27:active {
 </div>
 </p>
 <div>
-	<p class="text11" ">
+  <p><a name="company"></a></p> 
+	<p class="text11">
 <h5  style="text-align: justify;margin: 0px; padding-left: 10px;padding-right: 10px; background-color: #9fdfbf;border-radius: 5px;">
 Грунтовая лаборатория АО «МОСТДОРГЕОТРЕСТ» была создана в 2008 году и за время своего существования вышла на одно из ведущих мест среди организаций, занимающихся лабораторным анализом грунтов и грунтовых вод.
 Наша геотехническая лаборатория предлагает высококвалифицированные услуги по определению физико-механических свойств грунтов, анализу химического состава грунтов и грунтовых вод, определению их свойств в целях классификации согласно международным стандартам ASTM и отечественным ГОСТам.
@@ -570,6 +606,7 @@ a.button27:active {
 </div>
 <div class="parallax" style="border-radius: 50px ;width: 100%;height: 450px;"></div>
 <div style="text-align: center;border-radius: 5px;width: 100%;padding-left: 5%; padding-right: 5%;border-style: hidden;background-color:  #9fdfbf;border-radius: 15px;padding: 0px">
+  <p><a name="tab_info"></a></p> 
 	<p class="text_effect">
 		<caption><h2 style="margin-right: 50px">КУРСЫ</h2></caption>
 		<table border="1" style="width: 100%;padding-left: 5%; padding-right: 5%;border-style: hidden;background-color:  #9fdfbf;border-radius: 15px;padding: 0px">
@@ -591,11 +628,13 @@ a.button27:active {
 </div>
 <div style="float: left;display: inline-block;width: 100%;text-align: center; background-color:  #9fdfbf;border-radius: 40px;">
 	<p style="background-color: yellow;" >
+     <p><a name="how_adress"></a></p> 
 		<p class="text11"><h1>Как к нам пройти:</h1></p>
 		<iframe   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2238.90878385092!2d37.6486973161045!3d55.864248990858194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b536c1725764bd%3A0x87fd8e9f8f4a2096!2z0J7QntCeICLQnNC-0YHRgtCU0L7RgNCT0LXQvtCi0YDQtdGB0YIi!5e0!3m2!1sru!2sru!4v1576654010321!5m2!1sru!2sru" width=100% height="400" frameborder="0" style="border:0;" allowfullscreen="" style="float: right;display: inline-block;"></iframe>
 
 
-<div style="float: left;display: inline-block; text-align: left; font-size: 15px;" class="text11" >
+<div  style="float: left;display: inline-block; text-align: left; font-size: 15px;" class="text11" >
+
 	<h2>
 		Телефоны:
 		</h2>
